@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>EcomDemo</title>
+  <style>
+    body { margin:0; font-family:Inter, sans-serif; background:#0a0f24; color:white; }
+    header { padding:20px; background:#0a0f24; display:flex; justify-content:space-between; align-items:center; }
+    header h1 { margin:0; font-size:22px; color:white; }
+    nav a { color:white; margin-left:20px; text-decoration:none; padding:6px 12px; border-radius:20px; }
+    nav a.active { background:#2563eb; }
+
+    .container { padding:40px; }
+    h2 { margin-bottom:20px; font-size:26px; }
+
+    .product-grid { display:flex; gap:20px; flex-wrap:wrap; }
+    .card { background:#11182f; padding:20px; border-radius:16px; width:240px; }
+    .card h3 { margin:0 0 8px; }
+    .card p { margin:0 0 10px; color:#9ca3af; }
+    .price { font-size:18px; font-weight:600; margin-bottom:4px; }
+    .stock { font-size:14px; color:#9ca3af; margin-bottom:12px; }
+
+    input.qty { width:50px; padding:6px; border-radius:6px; border:none; }
+    button { margin-left:10px; padding:8px 14px; border:none; border-radius:8px; background:#2563eb; color:white; cursor:pointer; }
+
+    footer { margin-top:50px; text-align:center; padding:20px; color:#9ca3af; font-size:14px; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>EcomDemo</h1>
+  <nav>
+    <a class="active">Products</a>
+    <a>My Orders</a>
+    <a>Cart (0)</a>
+  </nav>
+</header>
+
+<div class="container">
+  <h2>Products</h2>
+  <div class="product-grid">
+
+    <div class="card">
+      <h3>Wireless Mouse</h3>
+      <p>Comfortable ergonomic mouse</p>
+      <div class="price">₹ 499</div>
+      <div class="stock">Stock: 10</div>
+      <input class="qty" type="number" value="1"> <button>Add to Cart</button>
+    </div>
+
+    <div class="card">
+      <h3>Mechanical Keyboard</h3>
+      <p>Tactile keys, RGB</p>
+      <div class="price">₹ 2499</div>
+      <div class="stock">Stock: 5</div>
+      <input class="qty" type="number" value="1"> <button>Add to Cart</button>
+    </div>
+
+    <div class="card">
+      <h3>USB-C Cable 1m</h3>
+      <p>Fast charge & data</p>
+      <div class="price">₹ 199</div>
+      <div class="stock">Stock: 20</div>
+      <input class="qty" type="number" value="1"> <button>Add to Cart</button>
+    </div>
+
+    <div class="card">
+      <h3>Bluetooth Earbuds</h3>
+      <p>Noise isolation, 24h battery</p>
+      <div class="price">₹ 1499</div>
+      <div class="stock">Stock: 8</div>
+      <input class="qty" type="number" value="1"> <button>Add to Cart</button>
+    </div>
+
+  </div>
+</div>
+
+<footer>
+  Demo app — front-end only. Inventory & orders persist in your browser (localStorage).
+</footer>
+
+</body>
+</html>
